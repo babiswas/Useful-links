@@ -1,0 +1,46 @@
+1.docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+#To run jenkins using docker.
+2.Run any application os agnostic using docker.
+
+Multi Branch Pipeline:
+Declarative pipeline:
+
+pipeline{
+   agent any
+   stages{
+     stage{
+       steps{
+       }
+     }
+     stage{
+       steps{
+       }
+     }
+   }
+}
+
+To save the state of the application use docker volumes.
+1.Scripted pipeline
+2.Declarative pipeline
+
+To run jenkins pipeline using jenkins file:
+1.Pipeline script from scm(Configuration)
+
+Set pipeline definition as 
+1.pipeline script if pipeline script is written in jenkins enviroment
+2.select pipeline script from scm if it has to be fetched from scm
+
+
+Docker in Docker:
+https://tomgregory.com/running-docker-in-docker-on-window
+
+Execute docker commands from jenkins container
+
+
+
+
+
+
+
+
+
