@@ -33,6 +33,7 @@ Set pipeline definition as
 
 Docker in Docker:
 https://tomgregory.com/running-docker-in-docker-on-window
+https://www.cyberciti.biz/faq/remove-uninstall-nginx-from-ubuntu-debian-linux-apt-get-command/
 https://phoenixnap.com/kb/yum-vs-apt#:~:text=The%20yum%20update%20command%20is,to%20the%20latest%20stable%20version.
 
 Execute docker commands from jenkins container
