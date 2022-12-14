@@ -39,6 +39,7 @@ https://phoenixnap.com/kb/yum-vs-apt#:~:text=The%20yum%20update%20command%20is,t
 Execute docker commands from jenkins container
 
 https://phoenixnap.com/kb/create-a-sudo-user-on-debian
+https://medium.com/@pierangelo1982/install-docker-with-ansible-d078ad7b0a54
 
 
 
