@@ -32,6 +32,8 @@ Set pipeline definition as
 
 
 Docker in Docker:
+SSH
+https://iceburn.medium.com/basic-knowledge-of-ssh-95cb53d55c08
 https://tomgregory.com/running-docker-in-docker-on-window
 https://www.devopsroles.com/git-cheat-sheet/
 https://engineeringblogs.asyncq.com/
