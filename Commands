@@ -23,3 +23,9 @@ yum install initscripts
 
 netstat -tulpn
 ip a #to get the ip adress of the machine.
+
+Config files:
+=============
+/etc/ssh/sshd_config
+root login disable.
+
