@@ -22,4 +22,4 @@ yum install net-tools
 yum install initscripts
 
 netstat -tulpn
-
+ip a #to get the ip adress of the machine.
