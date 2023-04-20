@@ -24,6 +24,7 @@ Clear command not found
 yum install ncurses
 yum install net-tools
 yum install initscripts
+yum install passwd
 
 netstat -tulpn
 ip a #to get the ip adress of the machine.
