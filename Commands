@@ -9,6 +9,9 @@ Mac Command
 sudo launchctl list|grep -i docker(Service status on mac)
 
 
+find path -name regex(find the file)
+
+
 Yum update failure
 ====================
 
