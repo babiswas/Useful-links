@@ -19,6 +19,7 @@ Clear command not found
 ========================
 yum install ncurses
 yum install net-tools
+yum install initscripts
 
 netstat -tulpn
 
