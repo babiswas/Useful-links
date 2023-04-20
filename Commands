@@ -17,4 +17,8 @@ dnf distro-sync
 
 Clear command not found
 ========================
-yum install ncurses 
+yum install ncurses
+yum install net-tools
+
+netstat -tulpn
+
