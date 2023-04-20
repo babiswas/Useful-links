@@ -29,3 +29,7 @@ Config files:
 /etc/ssh/sshd_config
 root login disable.
 
+To check the auth.log  rpm installed log file
+/var/log/auth.log
+/var/log/dnf.rpm.log
+
