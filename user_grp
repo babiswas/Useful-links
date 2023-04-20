@@ -1,1 +1,47 @@
 
+==========================================================
+ls -l directory/filename
+Primary group users are in /etc/passwd
+user login settings /etc/ssh/sshd_config file
+user auth /var/log/auth.log
+==========================================================
+Link:
+https://www.tecmint.com/add-users-in-linux/
+
+
+Command
+=======
+id -gn username
+groups username
+
+When useradd command is executed than following files gets effected:
+1./etc/passwd
+2./etc/shadow
+3./etc/group
+4./etc/gshadow
+
+A.creates and populates a home directory for the new user.
+B.sets permissions and ownerships to the home directory.
+
+useradd -d /my/name bapan
+
+home directory-> /my/name
+
+username:paswd:userid:groupid:home directory:shell
+useradd command.
+
+===========Custom userid and usergroup=====================
+useradd -u 10004(custom. id) username
+useradd -u 100000004 -g hellogroup. bapan
+
+
+
+
+
+
+
+
+
+
+
+
