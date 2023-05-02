@@ -1,0 +1,75 @@
+Helm
+====
+
+Before Helm:
+
+Revision history
+Dynamic configuration
+helm is intelligent
+
+
+What is helm?
+Helm is a package manager for kubernetes cluster
+
+
+Helm install commands
+=====================
+
+helm install apache binami/apache --namespace=web
+helm upgarde apache bitanami/apache --namespace=web
+helm rollback apache 1 -namespace=web
+helm uninstall apache
+
+helm install service repository -namespace=kubernetes namespace
+
+
+Helm start repo
+==============
+helm repo list
+helm repo add bitnami https://xyz.com
+helm search repo apache
+help search repo mysql --version
+help repo remove repo_name
+
+Helm install
+=============
+helm install --namespace xyz mydb reponame/appname
+helm list --namespace xyz
+helm uninstall mydb --namespace xyz
+helm install mydb repo_name/app_name  --values value.yml
+#Custom configuration
+
+helm repo update
+helm status mydb
+helm upgrade mydb  repo_name  --values path_to_values.yml
+helm upgrade repo_name/app_name --reuse--values
+
+https://www.systemdesigntutorial.com/blog/acid-base-cap-theorem
+
+
+helm install mydb reponame/appname --values path   --dry-run
+helm template mydb reponame/appname --values path
+helm get notes installtion_name
+helm get values mydb --all
+helm get values mydb--revision 2
+helm get manifest mydb --revision  2
+helm history myinstalltion
+
+helm rollback installtion_name revision 
+helm uninstall mywebserver --keep-history
+helm rollback mywebserver 3
+helm install mydb bitnami/mysql --namespace mynamespace --create-namespace
+helm upgrade --install mywebserver bitnami/apache
+helm install mywebserver bitnami/mysql --wait --timeout 5m10s
+helm install mywebserver bitnami/apache --atomic
+helm package firstchart
+
+
+chart
+=========
+chart.yml
+values.yml
+charts
+template
+
+helm install myapp app/
