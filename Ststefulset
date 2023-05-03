@@ -40,3 +40,6 @@ Each pod has its own service name
 1.Configure cloning and data synchronization
 2.Managing and back up
 3.Make remote storage available
+kubectl exec POD_NAME -it -n namespace /bin/sh
+kubectl logs --follow podname  -n namespace>mylog1.txt
+cat mylog1.txt|tail -n +30|head -n 10
