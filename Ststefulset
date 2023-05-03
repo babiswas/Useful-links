@@ -1,0 +1,42 @@
+Stateful Applications
+=====================
+stateless application->Deployment(Kubernetes Component)
+stateful application->statefulset(Kubernetes Component)
+
+kubectl scale statefulset name --replicas=x -n mynamespace
+
+Deployment v/s Statefulset
+==========================
+Each pod associated with stateful set has ordered identity.
+
+   Service
+   -------
+|     |      |
+|     |      |
+p1    p2     p3
+
+In deployment replica pods get random id
+In statefiul set the replica pod get ordered id
+Sticky identity is maintained for each pod in statefulset
+
+Scaling database applications
+=============================
+
+Is there any master slave relation between the replicasets to prevennt inconsistancy?
+New replica will clone data from previous pod.
+
+All data will be lost if all pods die.
+
+Remote storage is required.
+
+Each pod has its own service name
+
+       Service dns
+       =========
+     |    |     |
+     p1   p2    p3
+     dns1 dns2  dns3
+
+1.Configure cloning and data synchronization
+2.Managing and back up
+3.Make remote storage available
