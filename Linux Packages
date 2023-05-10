@@ -13,3 +13,20 @@ sudo apt install net-tools
 
 https://linuxhandbook.com/find-ip-address/
 
+sudo docker container inspect container_name_or_ID
+docker network inspect bridge
+docker network inspect -f '{{json .IPAM.Config}}' bridge | jq -r .[].Subnet
+docker network inspect -f '{{json .IPAM.Config}}' bridge | jq -r .[].Gateway
+docker container inspect -f '{{ .NetworkSettings.IPAddress }}' CONTAINER_ID_OR_NAME
+docker container inspect -f '{{ .NetworkSettings.IPAddress }}' ubuntu-ip 
+docker container inspect -f '{{ .NetworkSettings.Networks.bridge.IPAddress }}' containerid
+docker run --rm --name ubuntu-ip -d ubuntu:20.04 sleep 1d
+docker exec -ti ubuntu-ip sh
+
+docker inspect bridge|jq .[].Containers
+docker network inspect bridge | jq '.[].Containers."[CONTAINER ID]".IPv4Address'
+
+
+https://linuxhandbook.com/get-container-ip/#:~:text=Use%20the%20command%20sudo%20docker,matching%20the%20string%20%22IPAddress%22.
+
+
