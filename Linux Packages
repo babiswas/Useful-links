@@ -1,0 +1,15 @@
+Network Tools(Linux)
+====================
+iproute2
+net-tools
+
+Tools to display ip adress
+===========================
+ip addr
+ifconfig
+hostname -I
+
+sudo apt install net-tools
+
+https://linuxhandbook.com/find-ip-address/
+
