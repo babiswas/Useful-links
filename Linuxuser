@@ -26,9 +26,17 @@ passwd username
 groupadd TEST
 groupdel TEST
 
+grep username /etc/shadow.  password information
+
 /etc/group
 less /etc/passwd
 less /etc/group
+
+Password aging:
+===============
+chage 
+/etc/login.def
+
 
 
 
