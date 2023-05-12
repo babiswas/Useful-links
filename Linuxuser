@@ -19,4 +19,6 @@ groups(list of groups)
 -L / -U. lock/unlock a user
 
 usermod -m -d /home/modified_name user_name
+To set passwd
+passwd username
 
