@@ -27,6 +27,8 @@ groupadd TEST
 groupdel TEST
 
 /etc/group
+less /etc/passwd
+less /etc/group
 
 
 
