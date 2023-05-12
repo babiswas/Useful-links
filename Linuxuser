@@ -1,0 +1,5 @@
+#Need root acces to create linux user
+useradd -m -d /home/us1 us1
+id username
+#After creating user check the user using id username
+id username
