@@ -16,3 +16,5 @@ uid(userid)
 gid(groupid)
 groups(list of groups)
 
+-L / -U. lock/unlock a user
+
