@@ -3,3 +3,4 @@ useradd -m -d /home/us1 us1
 id username
 #After creating user check the user using id username
 id username
+useradd -m -d /home/username -c "hello user" -g group_name -s /bin/bash -e expiry_date user_name
