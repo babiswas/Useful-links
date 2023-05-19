@@ -6,3 +6,7 @@ RUN x11vnc -storepasswd 1234 ~/.vnc/passwd
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x *.sh
 ENTRYPOINT ["/entrypoint.sh"]
+
+#!/bin/bash
+x11vnc -forever -usepw -create &
+/bin/bash
